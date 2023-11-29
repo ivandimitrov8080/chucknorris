@@ -29,6 +29,12 @@ npm start
 
 - Visit http://localhost:3000 in your browser.
 
+#### Use Nix
+
+- [Install Nix](https://nixos.org/)
+- Run `nix run github:betterstack-community/chucknorris`
+- Visit http://localhost:3000 in your browser.
+
 ## ⚖ License
 
 The code used in this project and in the linked tutorial are licensed under the
