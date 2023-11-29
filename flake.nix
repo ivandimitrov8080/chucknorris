@@ -25,7 +25,9 @@
         dontNpmBuild = true;
         postInstall = ''
           mkdir -p $out/bin/
-          echo "${pkgs.nodejs_20}/bin/npm start" > $out/bin/$pname
+          mv $out/lib/node_modules/$pname/* $out
+          rm -rf $out/lib
+          echo "cd $out && ${pkgs.nodejs_20}/bin/npm start" > $out/bin/$pname
           chmod +x $out/bin/$pname
         '';
       };
