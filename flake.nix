@@ -12,7 +12,7 @@
       system = "x86_64-linux";
       pkgs = nixpkgs.legacyPackages.${system};
       buildInputs = with pkgs; [
-        nodejs_20
+        nodejs_16
       ];
     in
     {
